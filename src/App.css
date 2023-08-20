@@ -1,0 +1,113 @@
+/* -------------- GENERAL ------------- */
+:root {
+  --main-color: rgb(195, 132, 14);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 40px;
+}
+/* ----------------------------------- */
+/* -------------- HEADER ------------- */
+/* ----------------------------------- */
+header {
+  display: flex;
+  gap: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid lightgray;
+  margin-left: 40px;
+}
+header i {
+  font-size: 40px;
+  color: var(--main-color);
+}
+/* ----------------------------------- */
+/* --------------- MAIN -------------- */
+/* ----------------------------------- */
+.hidden {
+  visibility: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+main > button {
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+main > div {
+  display: flex;
+  gap: 40px;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.counter > div {
+  display: flex;
+  gap: 10px;
+  font-size: 40px;
+}
+.counter p {
+  background-color: var(--main-color);
+  padding: 5px 15px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+}
+.counter > div > button {
+  border: none;
+  background-color: white;
+  font-size: 30px;
+}
+
+.counter > button {
+  border: none;
+  font-size: 18px;
+  color: white;
+  background-color: var(--main-color);
+  padding: 5px 12px;
+  border-radius: 10px;
+}
+/* ----------------------------------- */
+/* -------------- FOOTER ------------- */
+/* ----------------------------------- */
+footer {
+  padding: 30px;
+  background-color: whitesmoke;
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* ----------------------------------- */
+/* -------------- QUERY -------------- */
+/* ----------------------------------- */
+@media (max-width: 570px) {
+  /* body {
+    background-color: green;
+  } */
+  main > div {
+    flex-direction: column;
+  }
+}
