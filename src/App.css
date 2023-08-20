@@ -29,7 +29,9 @@ header i {
 .hidden {
   visibility: hidden;
 }
-
+button {
+  cursor: pointer;
+}
 main {
   display: flex;
   flex-direction: column;
